@@ -10,31 +10,64 @@
 </head>
 
 <body>
+
     <section class="section-nav" id="section-nav">
         <div class="head-nav">
             <p class="header-name-nav">&lt;/<span class="header-logo-nav">Mithu</span>&gt;</p>
             <img src="asstes/icons/arrow_circle_right.svg" alt="right-arrow" tabindex="0" onclick="toggleMenu()">
         </div>
         <div class="menu">
-            <p class="menu-item">Home</p>
-            <p class="menu-item">About</p>
-            <p class="menu-item">Education</p>
-            <p class="menu-item">Skills</p>
-            <p class="menu-item extra-margin">Let's Talk</p>
+            <a href="#home" onclick="toggleMenu()">
+                <p class="menu-item">Home</p>
+            </a>
+            <a href="#about" onclick="toggleMenu()">
+                <p class="menu-item">About</p>
+            </a>
+            <a href="#education" onclick="toggleMenu()">
+                <p class="menu-item">Education</p>
+            </a>
+            <a href="#skills" onclick="toggleMenu()">
+                <p class="menu-item">Skills</p>
+            </a>
+            <a href="#contact" onclick="toggleMenu()">
+                <p class="menu-item extra-margin">Let's Talk</p>
+            </a>
         </div>
         <div class="footer-nav">
             <p class="footer">Designed and Made by J.J.Mithushanth</p>
         </div>
     </section>
+
     <section class="header">
         <p class="header-name">&lt;/<span class="header-logo">Mithu</span>&gt;</p>
         <img src="asstes/icons/arrow_circle_left.svg" alt="left-arrow" tabindex="0" onclick="toggleMenu()">
+        <nav class="nav">
+            <ul>
+                <a href="#hero">
+                    <li class="nav-item">Home</li>
+                </a>
+                <a href="#about">
+                    <li class="nav-item">About</li>
+                </a>
+                <a href="#Education">
+                    <li class="nav-item">Education</li>
+                </a>
+                <a href="#skills">
+                    <li class="nav-item">Skills</li>
+                </a>
+                <a href="#contact">
+                    <li class="nav-item">Let's Talk</li>
+                </a>
+            </ul>
+        </nav>
     </section>
 
-    <section class="hero">
-        <p class="hi">Hi There</p>
-        <p class="hero-name">I'm <span class="hero-name-styled">Jonathan Mithushanth</span></p>
-        <p class="hero-intro">I am a Software Engineering Student</p>
+    <section class="hero" id="hero">
+        <div class="text-content">
+            <p class="hi">Hi There</p>
+            <p class="hero-name">I'm &nbsp;<span class="hero-name-styled">Jonathan Mithushanth</span></p>
+            <p class="hero-intro">I am a Software Engineering Student</p>
+        </div>
         <img src="asstes/vectors/vectorHero.png" alt="hero-vector">
     </section>
     <script src="script.js"></script>
