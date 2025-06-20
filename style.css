@@ -3,6 +3,11 @@
 :root {
     --primary-color: #0F1F4B;
     --accent-color: #F75C4E;
+    --accent-light: #FFD5CF;
+    --accent-blue: #3C6FFF;
+    --neutral-gray: #A0A3B1;
+    --success-green: #2ECC71;
+    --gold-accent: #FFB648;
 }
 
 body {
@@ -121,7 +126,10 @@ nav {
 
 .header img {
     height: 35px;
-    padding: 1rem;
+    padding: 0.5rem;
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
 }
 
 /*==============================================================================================================================================================*/
@@ -173,16 +181,64 @@ nav {
     display: none;
 }
 
+/*==============================================================================================================================================================*/
+/*Education section*/
+
+.title {
+    color: var(--accent-color);
+    font-size: 2.5rem;
+    font-weight: 700;
+    padding: 1rem;
+    margin: 0;
+}
 
 
+.edu-items {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0;
+}
 
+.edu-item {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3rem;
+}
 
+.edu-name{
+    color: var(--success-green);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0;
+}
 
+.edu-place {
+    color: #3C6FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+}
 
+.edu-result {
+    color: var(--accent-light);
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 0;
+}
 
+.edu-duration {
+    color: #A0A3B1;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 0;
+}
 
-
-
+.edu-item-right {
+    text-align: right; 
+}
 
 
 
