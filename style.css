@@ -316,6 +316,26 @@ nav {
         border-radius: 0.8rem;
         color: white;
     }
+
+    .education {
+        padding: 8rem;
+    }
+    .title {
+        text-align: center;
+        font-size: 3.5rem;
+    }
+
+    .edu-name {
+        font-size: 2rem;
+    }
+
+    .edu-place {
+        font-size: 1.75rem;
+    }
+
+    .edu-duration, .edu-result {
+        font-size: 1.5rem;
+    }
 }
 
 @media (min-width: 1440px) {
