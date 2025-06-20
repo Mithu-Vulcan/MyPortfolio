@@ -10,6 +10,11 @@
     --gold-accent: #FFB648;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
     background-color: var(--primary-color);
     font-family: "poppins";
@@ -65,7 +70,7 @@ body {
     font-weight: 600;
     color: var(--primary-color);
     padding: 1rem;
-    margin-bottom:5rem;
+    margin-bottom: 5rem;
 }
 
 .menu-item {
@@ -91,7 +96,7 @@ body {
 
 a {
     color: inherit;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 li:hover {
@@ -208,7 +213,7 @@ nav {
     margin-bottom: 3rem;
 }
 
-.edu-name{
+.edu-name {
     color: var(--success-green);
     font-size: 1.5rem;
     font-weight: 700;
@@ -237,7 +242,7 @@ nav {
 }
 
 .edu-item-right {
-    text-align: right; 
+    text-align: right;
 }
 
 
@@ -246,9 +251,10 @@ nav {
 /*Bigger screens*/
 
 @media (min-width: 1024px) {
-    .header-name{
+    .header-name {
         padding-left: 0;
     }
+
     .header img {
         display: none;
     }
