@@ -187,6 +187,35 @@ nav {
 }
 
 /*==============================================================================================================================================================*/
+/*About section*/
+
+.about-section {
+    margin: 0;
+    padding: 1rem;
+}
+
+.about-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-section img {
+    width: 300px;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+}
+
+.about-para {
+    font-size: 1rem;
+    color: white;
+    text-align: justify;
+    margin: 0;
+    margin-top: 1.5rem;
+}
+
+/*=============/*==============================================================================================================================================================*/
 /*Education section*/
 
 .title {
@@ -245,7 +274,60 @@ nav {
     text-align: right;
 }
 
+/*==============================================================================================================================================================*/
+/*skills*/
 
+.skills-section {
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.skill-items {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.skill-item-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2%;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-item-img img {
+    width: 45%;
+}
+
+.skill-item-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-name {
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 600;
+    align-self: center;
+}
+
+.skill-pc {
+    display: none;
+}
 
 /*==============================================================================================================================================================*/
 /*Bigger screens*/
@@ -336,6 +418,36 @@ nav {
     .edu-duration, .edu-result {
         font-size: 1.5rem;
     }
+
+    .about-section {
+        padding: 8rem;
+    }
+
+    .about-para {
+        font-size: 1.25rem;
+    }
+
+    .skill-item-text, .skill-items {
+        display: none;
+    }
+
+    .skills-section{
+        padding: 8rem;
+    }
+
+    .skill-pc {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: space-between;
+    }
+
+    .skill-pc img {
+        width: calc((100% / 4 ) - 5rem);
+        padding: 1rem;
+    }
+
 }
 
 @media (min-width: 1440px) {
@@ -354,4 +466,13 @@ nav {
     .hero img {
         width: 550px;
     }
+
+    .about-section img {
+        width: 400px;
+    }
+
+    .about-para {
+        font-size: 1.5rem;
+    }
+
 }
