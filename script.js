@@ -13,14 +13,15 @@ document.addEventListener("DOMContentLoaded", (event) => {
         duration: 0.6,
     })
 
-
-    tl.from('.nav-item', {
-        y: -200,
-        opacity: 0,
-        duration: 0.3,
-        stagger: 0.1,
-        ease: "elasic"
+    if (window.matchMedia("(min-width: 1440px)").matches) {
+        tl.from('.nav-item', {
+            y: -200,
+            opacity: 0,
+            duration: 0.3,
+            stagger: 0.1,
+            ease: "elasic"
     })
+    }
 
     tl.from("#hero-stagger", {
         y: 200,
@@ -38,12 +39,14 @@ document.addEventListener("DOMContentLoaded", (event) => {
 
     tl.from(".contact-btn", {
         opacity: 0,
-        duration: 0.6,
+        duration: 0.3,
         
     })
-
-    tl.from(".header img", {
-        x: 200,
-        duration: 0.6
-    })
+    if (window.matchMedia("(max-width: 767px)").matches) {
+        tl.from(".header img", {
+            x: 150,
+            duration: 0.4,
+        ease: "power1.inOut",
+        })
+    }
 })
