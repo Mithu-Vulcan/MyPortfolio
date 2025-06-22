@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         duration: 0.6,
     })
 
+
     tl.from('.nav-item', {
         y: -200,
         opacity: 0,
@@ -39,5 +40,10 @@ document.addEventListener("DOMContentLoaded", (event) => {
         opacity: 0,
         duration: 0.6,
         
+    })
+
+    tl.from(".header img", {
+        x: 200,
+        duration: 0.6
     })
 })
