@@ -24,7 +24,7 @@ body {
 /*Navigation overlay*/
 
 .section-nav {
-    z-index: 1000;
+    z-index: 1001;
     position: fixed;
     background-color: var(--accent-color);
     width: 100%;
@@ -135,7 +135,7 @@ nav {
     position: fixed;
     top: 1rem;
     right: 1rem;
-    z-index: 9999;
+    z-index: 1000;
 }
 
 /*==============================================================================================================================================================*/
@@ -459,7 +459,7 @@ nav {
     }
 
     .skill-pc img {
-        width: calc((100% / 4 ) - 5rem);
+        width: calc((100% / 8 ) - 5rem);
         padding: 1rem;
     }
 

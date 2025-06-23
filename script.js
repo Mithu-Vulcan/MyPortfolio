@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         duration: 0.6,
     })
 
-    if (window.matchMedia("(min-width: 1440px)").matches) {
+    if (window.matchMedia("(min-width: 1000px)").matches) {
         tl.from('.nav-item', {
             y: -200,
             opacity: 0,
@@ -49,4 +49,27 @@ document.addEventListener("DOMContentLoaded", (event) => {
         ease: "power1.inOut",
         })
     }
+
+    const animatedSections = document.querySelectorAll(".reveal-section")
+
+    animatedSections.forEach((section) => {
+        const tlSection = gsap.timeline({
+            scrollTrigger: {
+                trigger: section,
+                start: "top 80%",
+                end: "bottom 20%",
+                scrub: true,
+            }
+            });
+
+            tlSection.from(section, {
+                opacity: 0,
+                y: 100
+            }).to(section, {
+                opacity: 0,
+                y: 0
+            });
+    })
+
+
 })
